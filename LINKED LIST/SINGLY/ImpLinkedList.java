@@ -1,7 +1,7 @@
 /*
 	Note:
 		1. stop the for loop by (--position != 1) && (temp.getNext() != null)
-		2. don't use (--position != 1) for deleteAtTheGivenPosition method
+		2. don't use (--position != 1) for deleteAtGivenPosition method
 		3. didn't use previousNode for insertAtGivenPosition method
 */
 
@@ -98,7 +98,7 @@ class LinkedList {
 	}
 	
 	// delete the node at the given position
-	public void deleteAtTheGivenPosition(int position) {
+	public void deleteAtGivenPosition(int position) {
 		if (position <= 1) {
 			this.head = this.head.getNext();
 		} else {
@@ -133,9 +133,9 @@ class ImpLinkedList {
 		l.insertIntoHead(1);
 		l.deleteHead();
 		l.delete();
-		l.deleteAtTheGivenPosition(1);
-		l.deleteAtTheGivenPosition(3);
-		l.deleteAtTheGivenPosition(3);
+		l.deleteAtGivenPosition(1);
+		l.deleteAtGivenPosition(3);
+		l.deleteAtGivenPosition(3);
 		System.out.println("#################");
 		l.print();
 	}

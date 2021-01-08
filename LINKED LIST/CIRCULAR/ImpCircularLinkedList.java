@@ -52,7 +52,7 @@ class CircularLinkedList {
 	}
 	
 	// inser at the given position
-	public void insertAtTheGivenPosition(int data, int position) {
+	public void insertAtGivenPosition(int data, int position) {
 		if (position <= 1) {
 			insertIntoHead(data);
 		} else {
@@ -106,7 +106,7 @@ class CircularLinkedList {
 	}
 	
 	// delete th node at the given position
-	public void deteteAtTheGivenPosition(int position) {
+	public void deteteAtGivenPosition(int position) {
 		if (position <= 1) {
 			deleteHead();
 		} else {
@@ -163,11 +163,11 @@ class ImpCircularLinkedList {
 		//c.insertIntoHead(1);
 		c.insert(6);
 		c.insertIntoHead(1);
-		c.insertAtTheGivenPosition(11, 5);
+		c.insertAtGivenPosition(11, 5);
 		//c.deleteHead();
 		//c.deleteTail();
-		//c.deteteAtTheGivenPosition(1);
-		c.deteteAtTheGivenPosition(5);
+		//c.deteteAtGivenPosition(1);
+		c.deteteAtGivenPosition(5);
 		c.print();
 	}
 }

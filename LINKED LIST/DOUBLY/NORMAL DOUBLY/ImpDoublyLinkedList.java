@@ -116,7 +116,7 @@ class DoublyLinkedList {
 	}
 	
 	// delete at the given position
-	public void deleteAtTheGivenPosition(int position) {
+	public void deleteAtGivenPosition(int position) {
 		Node temp = this.head;
 		if (position <= 1) {
 			deleteHead();
@@ -159,10 +159,10 @@ class ImpDoublyLinkedList {
 		d.insertAtGivenPosition(77, 6);
 		d.deleteHead();
 		d.delete();
-		d.deleteAtTheGivenPosition(1);
-		d.deleteAtTheGivenPosition(3);
+		d.deleteAtGivenPosition(1);
+		d.deleteAtGivenPosition(3);
 		d.insert(77);
-		d.deleteAtTheGivenPosition(2);
+		d.deleteAtGivenPosition(2);
 		d.print();
 	}
 }
